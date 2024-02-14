@@ -1,0 +1,153 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form__label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 20px;
+
+    background-color: rgb(10,23,65);
+}
+
+.form__range {
+    width: 240px;
+
+    accent-color: rgb(42,101,241);
+}
+
+.form__btn {
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+
+    font-size: 16px;
+    border: 2px solid rgb(42,101,241);
+    color: rgb(227,236,255);
+    background-color: rgb(42,101,241);
+    cursor: pointer;
+}
+
+.form__btn:hover {
+    background-color: transparent;
+}
+
+.form__password-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(10,23,65);
+}
+
+.form__subtitle {
+    margin-top: 30px;
+}
+
+.form__password {
+    width: 226px;
+    padding: 20px;
+
+    font-size: 13px;
+}
+
+.form__error {
+    display: block;
+    margin-top: 30px;
+    padding: 20px;
+    visibility: hidden;
+    
+    text-align: center;
+    border: 2px dashed red;
+}
+
+.form__error--active {
+    visibility: visible;
+}
+
+.form__copy {
+    padding: 27.5px;
+
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    -webkit-mask-image: url('./assets/copy-icon.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: 26px;
+}
+
+.form__copy:hover {
+    background-color:  rgb(42,101,241);
+}
+
+.form__subtitle {
+    color: rgb(92, 104, 146);
+    font-size: 14px;
+}
+
+.form__checkbox {
+    display: none;
+}
+
+.form__label-checkbox {
+    display: block;
+    position: relative;
+    width: 44px;
+    height: 22px;
+
+    border-radius: 1em;
+    background: rgb(92, 104, 146);
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    user-select: none;
+}
+
+.form__label-checkbox:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0.2em;
+    top: 0.2em;
+
+    border-radius: 1em;
+    background: #fff;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.form__checkbox:checked + .form__label-checkbox {
+    background: rgb(42,101,241);
+}
+
+.form__checkbox:checked + .form__label-checkbox:before {
+    left: 1.6em;
+
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 1024px) {
+    .form__password {
+        width: 300px;
+
+        font-size: 16px;
+    }
+
+    .form__copy {
+        padding: 29.5px;
+
+        background-size: 30px;
+    }
+
+    .form__range {
+        width: 324px;
+    }
+}
