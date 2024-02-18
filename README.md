@@ -1,4 +1,4 @@
-### Password Generator
+### Password Generator App
 
 ![Password-Generator](https://github.com/Melyfr/password-generator/assets/72978278/14f5ddef-5e33-4179-b1e7-5d3049df05b0)
 <div>
@@ -11,7 +11,7 @@
 
 ### О проекте:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Генератор случайных паролей с возможностью выбора символов и длины пароля. Генерация паролей основана на криптографически стойком генераторе псевдослучайных чисел. Интерфейс приложения адаптирован для различных размеров экрана.
 #
 
 ### Быстрый запуск:
